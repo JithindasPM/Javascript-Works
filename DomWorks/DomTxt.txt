@@ -1,0 +1,46 @@
+
+
+1) document.getElementsByName
+
+    get elements using tage name
+
+2)document.getElementsByClassName
+
+    get element using class name (class name used in multiple tags)
+
+3)document.getElementById
+
+    get element using id (class name used in one tags)
+
+4)document.querySelector
+
+    get unique element (using id) (must add # before id)
+
+    eg:-    id=main    
+            var item=document.querySelector('#main')
+            item.style.color='red'
+
+5)document.querySelectorAll
+
+    get multiple elements (using class,h1,p...etc) (must add . before id)
+
+    eg:-    class=main    
+            var item=document.querySelector('.main')
+            [...item].style.color='red'
+
+
+6)document.textContent
+
+    can change a text in html.
+
+    eg:-    <h1 id='main'>hai</h1>
+            var heading=document.querySelector('#main')
+            heading.textContent='jithin'    (h1 change from hai to jithin)
+
+7)document.innerHTML
+
+    can add a text inside a div etc...
+
+    eg:-    <div id='root'></div>
+            var div=document.querySelector('#root')
+            div.innerHTML='<b>jithin</b>'   ( then add a 'jithin' inside that div, if we use textContent add '<b>jithin</b>')
